@@ -2,8 +2,8 @@ import React, { useContext } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import LandingPage from './landing/LandingPage';
-import SetLimit from './admin/setlimit';
-import SetPrice from './admin/setprice';
+import SetLimit from './admin/SetLimit';
+import SetPrice from './admin/SetPrice';
 import AdminViewAllUsers from './admin/AdminViewAllUsers';
 import Laout from './admin/Laout';
 import ServoControl from './users/ServoControl';
@@ -22,7 +22,7 @@ function App() {
   const user = useContext(UserContext);
 
   return (
-    <Router  basename="/Domestic_Water_Prevention-System">
+    <Router  basename="/domestic_water_wastage_prevention_system">
       <Routes>
         {/* Landing Page Route */}
         <Route path="/" element={<LandingPage />} />
